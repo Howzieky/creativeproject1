@@ -8,6 +8,92 @@ html, body {
 	height: 100%;
 }
 
+@media only screen and (max-width: 599px) {
+
+	#gameDescriptions div img {
+		width: 100%;
+	}
+	#title {
+		width: 90%;
+	}
+	#gameImages {
+		flex-direction: column;
+
+	}
+	#gameImages img{
+		width: 120vw;
+		height: 80px;
+		object-fit: cover;
+	}
+	#aboutBlurb {
+		flex-direction: column;
+	}
+	#aboutBlurb p{
+		width: 70%;
+	}
+	#donations {
+		flex-direction: column;
+	}
+	.donateOption {
+		margin-bottom: 10px !important;
+	}
+	#game {
+		width: 90vw;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+/* Desktop */
+@media only screen and (min-width: 768px) {
+	#gameImages img {
+		width: 580px;
+		height: 360px;
+	}
+	#gameDescriptions div img {
+		width: 350px;
+	}
+
+	#gameDescriptions div {
+		flex: 0 0;
+	}
+	#gameDescriptions div:first-child img {
+		width: 500px;
+	}
+	#gameImages img {
+		width: 580px;
+		height: 360px;
+	}
+	#gameDescriptions div:first-child {
+		margin-left: 50%;
+		margin-right: 50%;
+	}
+	#title {
+		width: 50%;
+	}
+	#aboutBlurb {
+		margin: 100px;
+	}
+	#aboutBlurb p{
+		width: 50%;
+	}
+	#donations p {
+		font-size: 20px;
+	}
+	#donationDescription {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	#game {
+		height: 70vh;
+	}
+}
+
+.navbar-toggler {
+	color: #dadada !important;
+}
+
 .navbar {
 	position: fixed;
 	top: 0px;
@@ -18,9 +104,7 @@ html, body {
 
 }
 
-#title {
-	width: 50%;
-}
+
 
 #gameImages {
 	display: flex;
@@ -34,8 +118,6 @@ html, body {
 	-webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
 	filter: blur(3px);// brightness(0);
 	-webkit-filter: blur(3px);
-	width: 580px;
-	height: 360px;
 	opacity: .7;
 }
 
@@ -43,6 +125,11 @@ html, body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+#gameText.centered {
+	display: block;
+	text-align: center;
 }
 
 #gameText {
@@ -96,24 +183,13 @@ footer {
 	margin: 30px;
 	background-color: white;
 	border-radius: 3px;
-	flex: 0 0; /* flex-grow, flex-shrink, flex-basis */
-
 }
 
 #gameDescriptions div img {
-	width: 350px;
 	margin-bottom: 20px;
 }
 
-#gameDescriptions div:first-child img {
-	width: 500px;
 
-}
-
-#gameDescriptions div:first-child {
-	margin-left: 50%;
-	margin-right: 50%;
-}
 
 #donations {
 	display: flex;
@@ -130,7 +206,6 @@ footer {
 	background-color: red;
 	padding: 20px;
 	border-radius: 4px;
-	font-size: 20px;
 	color: black;
 	margin: 0px;
 
@@ -138,8 +213,6 @@ footer {
 
 #donationDescription {
 	margin: 30px;
-	margin-left: 80px;
-	margin-right: 80px;
 }
 
 #gameDescriptions.gamePage div:first-child h3{
@@ -157,7 +230,6 @@ footer {
 #aboutBlurb {
 	display: flex;
 	justify-content: space-around;
-	margin: 100px;
 	margin-top: 0px;
 	align-items: center;
 
@@ -165,7 +237,6 @@ footer {
 }
 
 #aboutBlurb p{
-	width: 50%;
 	font-size: 18px;
 }
 
@@ -175,7 +246,6 @@ footer {
 
 #game {
 	margin-top: 10px;
-	height: 70vh;
 }
 
 .unavailableGame {
