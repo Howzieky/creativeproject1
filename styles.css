@@ -42,11 +42,29 @@ html, body {
 	}
 }
 
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	#donations p {
+		margin: 10px !important;
+	}
+	#gameDescriptions div {
+		flex: 0 0;
+	}
+	#gameImages img {
+		width: 580px;
+		height: 360px;
+	}
+	#gameDescriptions div img {
+		width: 80vw;
+	}
+	#title {
+		width: 90%;
+	}
+	#game {
+		width: 80vw;
+	}
 }
 /* Desktop */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	#gameImages img {
 		width: 580px;
 		height: 360px;
