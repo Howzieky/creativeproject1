@@ -1,6 +1,11 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	padding-top: 85px;
+	padding-top: 56px;
+	background-color: black;
+}
+
+html, body {
+	height: 100%;
 }
 
 .navbar {
@@ -11,6 +16,10 @@ body {
 	background-color: black !important;
 	z-index: 10000;
 
+}
+
+#title {
+	width: 50%;
 }
 
 #gameImages {
@@ -32,13 +41,19 @@ body {
 
 .centered {
 	width: 100%;
-	text-align: center;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 #gameText {
 	position: absolute;
 	text-shadow: 0 0 15px #FFFFFF, 0 0 15px #FFFFFF, 0 0 30px #FFFFFF;
+}
+
+#gameBoxStuff {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .dropdown-menu {
@@ -56,20 +71,23 @@ body {
 footer {
 	height: 75px;
 	background-color: black;
-	margin: 0px;
-	position: relative;
-	bottom: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
+
+	position:absolute;
+	left:0;
+	right:0;
 }
 
 #gameDescriptions {
 	display: flex;
 	flex-wrap: wrap;
   	justify-content: space-around;
+}
+
+.dark {
 	background-color: #333333;
-	margin-top: 40px;
 }
 
 #gameDescriptions div {
@@ -93,7 +111,76 @@ footer {
 }
 
 #gameDescriptions div:first-child {
-	//flex: 0 0 100%;
 	margin-left: 50%;
 	margin-right: 50%;
+}
+
+#donations {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	padding-bottom: 40px;
+	text-decoration: none;
+}
+
+#donations p {
+	text-align: center;
+	min-width: 130px;
+	//padding: 50px;
+	background-color: red;
+	padding: 20px;
+	border-radius: 4px;
+	font-size: 20px;
+	color: black;
+	margin: 0px;
+
+}
+
+#donationDescription {
+	margin: 30px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#gameDescriptions.gamePage div:first-child h3{
+	width: 80vw;
+}
+
+#mainContent {
+	width: 100%;
+	margin: 0px;
+	padding-top: 20px;
+	background-color: white;
+	padding-bottom: 40px;
+}
+
+#aboutBlurb {
+	display: flex;
+	justify-content: space-around;
+	margin: 100px;
+	margin-top: 0px;
+	align-items: center;
+
+	margin-bottom: 0px;
+}
+
+#aboutBlurb p{
+	width: 50%;
+	font-size: 18px;
+}
+
+#aboutImage {
+	width: 50%;
+}
+
+#game {
+	margin-top: 10px;
+	height: 70vh;
+}
+
+.unavailableGame {
+	-webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	opacity: .7;
 }

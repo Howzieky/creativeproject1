@@ -18,7 +18,7 @@
 		                <a class="nav-link" href="/">Home</a>
 		            </li>
 		            <li class="nav-item">
-		                <a class="nav-link" href="about.html">About</a>
+		                <a class="nav-link" href="/about.html">About</a>
 		            </li>
 		            <li class="nav-item">
 		                <a class="nav-link" href="donate.html">Donate</a>
@@ -38,20 +38,18 @@
 		</nav>
 
 		<div id="mainContent">
-			<span class="centered"><img id="title" src="https://jdhcodelab.com/header.png"/></span>
-			<br>
-			<div id="gameImages">
-				<img src="/images/pool.png"/>
-				<img src="/images/asteroidium.png"/>
-				<img src="/images/visionprecision.png"/>
-				<span style="display:block; text-align:center;" id="gameText">
-					<h2><strong>Check out these free games</strong></h2>
-					<h3><strong>that use JavaScript and are thus not allowed on this site!</strong></h3>
-				</span>
-			</div>
+			<span class="centered"><h1><strong>Vision Precision</strong></h1></span>
+			<span id="gameBoxStuff" >
+				<img id="game" class="unavailableGame" src="/images/visionprecision.png"/>
+				<span class="centered" id="gameText"><h2><strong>Vision Precision uses JavaScript.</h2><h3>Come back later!</strong></h3></span>
+			</span>
 		</div>
 
-		<div id="gameDescriptions" class="dark">
+		<div id="gameDescriptions" class="dark gamePage">
+			<div>
+				<h3>Vision Precision</h3>
+				<p>Every color is just made up of red, green, and blue light. Can you figure out the right combinations to match the circle to the square?</p>
+			</div>
 			<div>
 				<a href="/games/asteroidium"><img src="/images/asteroidium.png"/></a>
 				<h3>Asteroidium</h3>
@@ -61,11 +59,6 @@
 				<a href="/games/billiards"><img src="/images/pool.png"/></a>
 				<h3>Billiards</h3>
 				<p>This one is still in early testing, it's no more than ball collision physics at this point. Still pretty dang fun!</p>
-			</div>
-			<div>
-				<a href="/games/visionprecision"><img src="/images/visionprecision.png"/></a>
-				<h3>Vision Precision</h3>
-				<p>Every color is just made up of red, green, and blue light. Can you figure out the right combinations to match the circle to the square?</p>
 			</div>
 		</div>
 		<footer>
