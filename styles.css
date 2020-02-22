@@ -272,3 +272,7 @@ footer {
 	-webkit-filter: blur(3px);
 	opacity: .7;
 }
+
+#game {
+	background-color: black;
+}
