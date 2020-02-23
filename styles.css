@@ -72,6 +72,9 @@ html, body {
 	#gameText h2 strong{
 		font-size: 1.25rem;
 	}
+	#gameText h3 strong{
+		font-size: 1.1rem;
+	}
 	#gameText:not(.futureGame) h2 strong{
 		display:none;
 	}
