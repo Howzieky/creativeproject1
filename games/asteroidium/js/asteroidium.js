@@ -2,6 +2,21 @@ function startUp(){
 	scene.loadImages("demoSprites", "images/demoSprites.png", "demoCursor", "images/demoCursor.png", "bigShip", "images/bigShip.png", "generationShadow","images/shadow.png", "generationClouds","images/clouds.png", "star", "images/star.png", "asteroidium", "images/Asteroidium.png", "ship", "images/ship.png", "iconSheet", "images/gravityImages.png", "bgDisplays", "images/bgDisplays.png", "gravityBigBtns", "images/gravityBigBtns.png", "achievementIcons", "images/achievementIcons.png", "tipArrow", "images/tipArrow.png", "toggleArrow", "images/toggleArrow.png", play)
 }
 
+document.getElementById("randomPreset").addEventListener("click", function(e){
+	e.preventDefault();
+	console.log("test");
+	fetch('https://www.jdhcodelab.com/code/getPlanetPreset.php', {
+		method: 'POST',
+		headers : new Headers(),
+		body: JSON.stringify({a: 1, b: 'Textual content'})
+	}).then(function(a){
+		return a.text();
+	}).then(function(a){
+		space.resetGame();
+		placeSet(a);
+	})
+})
+
 function play()
 {
 	var generationCanvas = $("<canvas></canvas>")[0];

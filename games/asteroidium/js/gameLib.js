@@ -2525,7 +2525,7 @@ function start(){
 			//console.time("render")
 			for (var i = 0; i < scene.shapes.length ; i++)
 			{
-				if (scene.shapes[i].visible == true)
+				if (scene.shapes[i].visible == true && !Library.isMobile)
 				{
 					scene.ctx.imageSmoothingEnabled = scene.shapes[i].smooth;
 					var halfWidth = ((scene.shapes[i].width / 2) * !scene.shapes[i].centered || 0)
